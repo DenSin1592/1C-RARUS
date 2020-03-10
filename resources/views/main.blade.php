@@ -17,6 +17,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
     </head>
 <body>
@@ -71,7 +72,35 @@
         </div>
     </div>
 </nav>
-main
+    <div class="container">
+        <br>
+        <div class="header-h1-main">
+            <h1>Список звонков</h1>
+        </div>
+    </div>
+    <br>
+    <div class="row align-items-center justify-content-center text-center">
+        <div class="col-md-10">
+            <ul class="list-group">
+                <li class="list-group-item ">
+                    Login1
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-dark">Call1</li>
+                        <li class="list-group-item list-group-item-dark">Call2</li>
+                    </ul>
+                </li>
+                <li class="list-group-item ">
+                    Login2
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-dark">Call1</li>
+                        <li class="list-group-item list-group-item-dark">Call2</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
