@@ -17,9 +17,10 @@ class CreateCallsTable extends Migration
             $table->bigIncrements('id');
             $table->string('status');
             $table->timestamp('time');
+            $table->unsignedBigInteger('phone_id');
             //$table->timestamps();
 
-
+            $table->foreign('phone_id')->references('id')->on('phones');
 
         });
     }

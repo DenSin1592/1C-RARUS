@@ -9,6 +9,5 @@ $factory->define(Phone::class, function (Faker $faker) {
     return [
         'phone' => $faker->e164PhoneNumber,
         'client_id' => rand(1,50),
-        'call_id' => rand(1, 1000)
     ];
 });

@@ -17,11 +17,10 @@ class CreatePhonesTable extends Migration
             $table->bigIncrements('id');
             $table->string('phone')->unique();
             $table->unsignedBigInteger('client_id');
-            $table->unsignedBigInteger('call_id');
             //$table->timestamps();
 
             $table->foreign('client_id')->references('id')->on('clients');
-            $table->foreign('call_id')->references('id')->on('calls');
+
 
         });
     }
