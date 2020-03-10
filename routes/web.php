@@ -23,4 +23,4 @@ Route::get('/home', function () {
 
 Auth::routes();
 
-Route::get('/main', 'MainController@index');
+Route::get('/main', 'HomeController@index');
