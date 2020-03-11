@@ -82,22 +82,22 @@
     <div class="row align-items-center justify-content-center text-center">
         <div class="col-md-10">
             <ul class="list-group">
+                @foreach($clients as $client)
                 <li class="list-group-item ">
-                    Login1
+                    {{$client->name}} /// {{$client->login}}
                     <ul class="list-group">
-                        <li class="list-group-item list-group-item-dark">Call1</li>
-                        <li class="list-group-item list-group-item-dark">Call2</li>
+                        @foreach($client->calls as $call)
+                        <li class="list-group-item list-group-item-dark">{{$call->status}} /// {{$call->date}}</li>
+                        @endforeach
                     </ul>
                 </li>
-                <li class="list-group-item ">
-                    Login2
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-dark">Call1</li>
-                        <li class="list-group-item list-group-item-dark">Call2</li>
-                    </ul>
-                </li>
-
+                @endforeach
             </ul>
+            <br>
+            <div class="row align-items-center justify-content-center text-center">
+                {{$clients->links()}}
+            </div>
+
         </div>
     </div>
 
